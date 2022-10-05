@@ -48,7 +48,7 @@ def ChanGate(v,vhalf_inf, slope_inf, A, B, C, D, E, F):
 
 def Na_T_Chan(name):
     Na_T = moose.HHChannel( '/library/' + name )
-    Na_T.Ek = EK
+    Na_T.Ek = ENa
     Na_T.Gbar = 300.0*SOMA_A
     Na_T.Gk = 0.0
     Na_T.Xpower = 3.0
